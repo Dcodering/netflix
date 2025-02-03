@@ -1,0 +1,97 @@
+.hero{
+    position: relative;
+}
+.bannerImg{
+    width: 100%;
+    mask-image: linear-gradient(to right, transparent, black 75%);
+    -webkit-mask-image: linear-gradient(to right, transparent, black 75%);
+}
+.heroCaption{
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    padding-left: 6%;
+}
+.hero .captionImg{
+    width: 90%;
+    max-width: 420px;
+    margin-bottom: 30px;
+}
+.heroCaption p{
+    max-width: 700px;
+    font-size: 17px;
+    margin-bottom: 20px;
+}
+.heroBtn{
+    display: flex;
+    gap: 10px;
+    margin-bottom: 50px;
+}
+.heroBtn .btn img{
+    width: 25px;   
+}
+.heroBtn .btn{
+    border: 0;
+    outline: 0;
+    display: inline-flex;
+    align-items: center;
+    padding: 8px 20px;
+    gap: 10px;
+    font-size: 15px;
+    font-weight: 600;
+    background: white;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.heroBtn .darkBtn{
+    color: white;
+    background: #6d6d6eb3;
+}
+.heroBtn .btn:hover{
+    background: #ffffffbf;
+}
+.heroBtn .btn.darkBtn:hover{
+    background: #6d6d6e66;
+}
+.moreCards{
+    margin-left: 6%;
+}
+@media (max-width: 1024px){
+    .heroCaption .titleCards{
+        display: none;
+    }
+    .heroBtn{
+        margin-bottom: 30px;
+    }
+}
+@media (max-width: 800px){
+    .heroCaption{
+        padding-left: 4%;
+    }
+    .hero .captionImg{
+        width: 40%;
+    }
+    .heroCaption p{
+        font-size: 12px;
+        margin-bottom: 10px;
+    }
+    .btn img{
+        width: 20px;
+    }
+    .moreCards{
+        padding-left: 4%;
+    }
+}
+@media (max-width: 500px){
+    .captionImg{
+        display: none;
+    }
+    .heroBtn .btn img{
+        width: 15px;
+    }
+    .heroBtn .btn{
+        padding: 4px 10px;
+        gap: 5px;
+        font-size: 10px;
+    }
+}
